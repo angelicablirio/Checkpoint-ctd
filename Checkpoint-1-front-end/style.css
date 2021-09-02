@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+body {
+    
+    background: linear-gradient(#1a5069, #68a0b9);
+}
+
+h1 {
+
+    color:#f4f5f8;
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.logo {
+
+    height: 60px;
+    left: 5px;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    width: 50px;
+    
+}
+
+nav {
+
+	position: absolute;
+	top: 20px;
+	right: 5px;
+}
+
+nav li {
+
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+
+    color:#f4f5f8;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav a:hover {
+
+    background: #ccc;
+    color: #195835;
+     
+}
+
+.banner {
+
+    background-image: url("imagens/passo-fundo.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+
+}
+
+.paragrafo-principal {
+
+    font-size: 20px;
+    text-align: center;
+
+}
+
+strong {
+
+    color:#d3deec;
+}
+
+.video {
+
+    display: inline;
+    float: left;
+    height: 200px;
+    margin-left: 50px;
+    padding: 20px 20px 20px 5px;
+    width: 400px;
+
+}
+
+.paragrafo-principal {
+
+    color:#abbae6;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.curiosidades {
+
+    color:#bcc6e2;
+    font-family: 'Lato', sans-serif;
+    margin-left: 700px;
+    margin-top: 80px;
+    
+}
+
+.lista-curiosidades {
+
+    font-size: 18px;
+
+}
+
+.icones {
+
+    margin-top: 100px;
+
+}
+
+.icone {
+
+    height: 40px;
+    padding: 5px;
+    width: 40px;
+
+}
+
