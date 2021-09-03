@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microondas</title>
+</head>
+<body>
+    <script>
+
+        var tempoPadrao = {
+            pipoca: 10,
+            macarrao: 8,
+            carne: 15,
+            feijao: 12,
+            brigadeiro: 8
+        }
+
+
+        var tempoDigitado = {
+            pipoca: null,
+            macarrao: null,
+            carne: null,
+            feijao: null,
+            brigadeiro: null
+        }
+
+        var mensagem = {
+            pratoNaoExiste: 'Prato inexistente, escolha uma opção válida!',
+            ComidaPronta: 'Prato pronto, bom apetite!',
+            TempoInsuficiente: 'Tempo insuficiente!',
+            Queimou: 'Infelizmente a sua comida queimou!',
+            MicroondasEstragou: 'KABUMMMM!'
+        }
+
+        var tipoDeAlimento = null;
+
+
+        function definirOPrato() {
+
+            tipoDeAlimento = prompt('Qual prato você gostaria de esquentar, pipoca, macarrão, carne, feijão ou brigadeiro? Escolha apenas uma opção.');
+
+        }
+
+        function definirOTempo() {
+
+            if (tipoDeAlimento == 'pipoca'){
+                
+                tempoDigitado.pipoca = prompt('Você escolheu a Pipoca, quantos segundos você gostaria de esquentar?');
+
+                if (tempoDigitado.pipoca < tempoPadrao.pipoca) {
+                alert(mensagem.TempoInsuficiente);
+                definirOTempo();
+
+
+                }else if (tempoDigitado.pipoca > (2 * tempoPadrao.pipoca) && tempoDigitado.pipoca <= (3 * tempoPadrao.pipoca)) {
+                    alert(mensagem.Queimou);
+
+                }else if (tempoDigitado.pipoca > (3 * tempoPadrao.pipoca)){
+                    alert(mensagem.MicroondasEstragou);
+
+                }else {
+                    alert(mensagem.ComidaPronta);
+                };
+
+
+            } else if (tipoDeAlimento == 'macarrao'){
+                
+                tempoDigitado.macarrao = prompt('Você escolheu o Macarrão, quantos segundos você gostaria de esquentar?');
+
+                if (tempoDigitado.macarrao < tempoPadrao.macarrao) {
+                alert(mensagem.TempoInsuficiente);
+                definirOTempo();
+
+                }else if (tempoDigitado.macarrao > (2 * tempoPadrao.macarrao) && tempoDigitado.macarrao <= (3 * tempoPadrao.macarrao)) {
+                    alert(mensagem.Queimou);
+
+                 }else if (tempoDigitado.macarrao > (3 * tempoPadrao.macarrao)){
+                    alert(mensagem.MicroondasEstragou);
+
+                }else {
+                    alert(mensagem.ComidaPronta);
+                };
+
+
+            } else if (tipoDeAlimento == 'carne'){
+                
+                tempoDigitado.carne = prompt('Você escolheu a Carne, quantos segundos você gostaria de esquentar?');
+
+                if (tempoDigitado.carne < tempoPadrao.carne) {
+                alert(mensagem.TempoInsuficiente);
+                definirOTempo();
+
+                }else if (tempoDigitado.carne > (2 * tempoPadrao.carne) && tempoDigitado.carne <= (3 * tempoPadrao.carne)) {
+                    alert(mensagem.Queimou);
+
+                 }else if (tempoDigitado.carne > (3 * tempoPadrao.carne)){
+                    alert(mensagem.MicroondasEstragou);
+
+                }else {
+                    alert(mensagem.ComidaPronta);
+                };
+
+            } else if (tipoDeAlimento == 'feijao'){
+                
+                tempoDigitado.feijao = prompt('Você escolheu o Feijao, quantos segundos você gostaria de esquentar?');
+
+                if (tempoDigitado.feijao < tempoPadrao.feijao) {
+                alert(mensagem.TempoInsuficiente);
+                definirOTempo();
+
+                }else if (tempoDigitado.feijao > (2 * tempoPadrao.feijao) && tempoDigitado.feijao <= (3 * tempoPadrao.feijao)) {
+                    alert(mensagem.Queimou);
+
+                 }else if (tempoDigitado.feijao > (3 * tempoPadrao.feijao)){
+                    alert(mensagem.MicroondasEstragou);
+
+                }else {
+                    alert(mensagem.ComidaPronta);
+                };
+
+
+            } else if (tipoDeAlimento == 'brigadeiro'){
+                
+                tempoDigitado.brigadeiro = prompt('Você escolheu o Brigadeiro, quantos segundos você gostaria de esquentar?');
+
+                if (tempoDigitado.brigadeiro < tempoPadrao.brigadeiro){
+                alert(mensagem.TempoInsuficiente)
+                definirOTempo();
+
+                }else if (tempoDigitado.brigadeiro > (2 * tempoPadrao.brigadeiro) && tempoDigitado.brigadeiro <= (3 * tempoPadrao.brigadeiro)) {
+                    alert(mensagem.Queimou);
+
+                 }else if (tempoDigitado.brigadeiro > (3 * tempoPadrao.brigadeiro)){
+                    alert(mensagem.MicroondasEstragou);
+
+                }else {
+                    alert(mensagem.ComidaPronta);
+                };
+
+            } else {
+
+                alert(prato.NaoExiste);
+                definirOPrato();
+                definirOTempo();
+
+            }
+    
+        }
+            
+        definirOPrato();
+        definirOTempo();
+
+    </script>
+</body>
+</html>
