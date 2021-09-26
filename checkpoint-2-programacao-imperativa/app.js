@@ -46,11 +46,11 @@ let produtos = [
   });
   
   
-  let mostrarItensDoCarrinho = carrinho.map((item) => (`${item.nome} R$ ${item.valor}`));
+  let mostrarItensDoCarrinho = carrinho.map((item) => (`\n${item.nome} R$ ${item.valor}`));
 
   let somarValorDoCarrinho = carrinho.reduce((acumulador, preco ) => {
     return acumulador + preco.valor
 }, 0)
   
-  console.log(`Os itens do carrinho são ${mostrarItensDoCarrinho}. A soma total do carrinho é R$ ${somarValorDoCarrinho}`);
+  console.log(`Os itens do carrinho são ${mostrarItensDoCarrinho}. \nA soma total do carrinho é R$ ${somarValorDoCarrinho}`);
 
