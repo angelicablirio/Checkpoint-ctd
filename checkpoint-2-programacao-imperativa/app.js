@@ -20,7 +20,7 @@ let produtos = [
     },
     {
       nome: 'Luminária',
-      valor: 299,
+      valor: 498,
       qualidade: 7,
       disponibilidade: true
     },
@@ -45,9 +45,12 @@ let produtos = [
             produto.disponibilidade === true
   });
   
-  let somarValorDoCarrinho = carrinho.reduce((acumulador, preco ) => acumulador.valor + preco.valor);
   
   let mostrarItensDoCarrinho = carrinho.map((item) => (`${item.nome} R$ ${item.valor}`));
+
+  let somarValorDoCarrinho = carrinho.reduce((acumulador, preco ) => {
+    return acumulador + preco.valor
+}, 0)
   
   console.log(`Os itens do carrinho são ${mostrarItensDoCarrinho}. A soma total do carrinho é R$ ${somarValorDoCarrinho}`);
 
